@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_soft_off {
+            timeout-ms = <50>;
+            key-positions = <12 42>; // TAB + LOWER
+            bindings = <&soft_off>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
